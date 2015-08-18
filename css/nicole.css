@@ -76,6 +76,10 @@
     color: #333;
 	}
 	
+	.text-secondary {
+    color: #FFF;
+	}
+
 	.text-faded {
 	color: rgba(255,255,255,.7);
 	}
@@ -90,6 +94,10 @@
 	
 	.no-padding {
 	padding: 0;
+	}
+	
+	.logo{
+	padding: 0 0 0 30px;	
 	}
 	
 	/*!
@@ -422,6 +430,36 @@
 	margin-bottom: 0;
 	}
 	
+	/*Contact*/
+	
+	#contact { 
+	background: url(../img/contact.jpg) 50% 0 fixed;
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 100px 0 200px;
+	}
+	
+	/*orderForm*/
+	
+	#orderForm { 
+	background: #888 url(../img/wood.jpg) 50% 0 fixed;
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 50px 50px;
+	}
+	
+	#orderForm form {
+	background: #FFF;
+	padding: 30px;
+	 border-radius: 30px;
+	 border: 5px solid #999;
+	}
+
+		
 	/** Glyphicon custom font sizes **/
 	
 	.gIcon-2x {
