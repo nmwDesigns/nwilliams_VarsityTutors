@@ -69,7 +69,7 @@
 	
 	.bg-secondary {
 	background-color: #FFF;
-	opacity: .75;
+	opacity: .85;
 	border-radius: 10px;
 	padding: 30px;
 	margin: 0 0 60px; 0;
@@ -421,20 +421,25 @@
 	padding: 100px 0 150px;
 	}
 	
-	.flavors-box {
-	max-width: 180px;
-	text-align: left;
+	.flavors-box-left {
+	position: relative;
+	width: 180px;
+	left: 26%;
 	}
 	
-	@media(min-width:992px) {
-	.flavors-box {
-	}
-	}
-	
-	.flavors-box p {
-	margin-bottom: 0;
+	.flavors-box-right{
+	position:relative;
+	width: 180px;
+	left: 40%;
 	}
 	
+	@media(max-width:600px) {
+	.flavors-box-left, .flavors-box-right {
+	width: 100%;
+	position:inherit;
+	}
+	}
+		
 	/*Contact*/
 	
 	#contact { 
@@ -443,7 +448,7 @@
 	margin: 0 auto; 
 	width: 100%; 
 	position: relative; 
-	padding: 100px 0 200px;
+	padding: 100px 0 100px;
 	}
 	
 	/*orderForm*/
@@ -457,13 +462,16 @@
 	padding: 50px 50px;
 	}
 	
-	#orderForm form {
+	
+	form {
 	background: #FFF;
-	padding: 30px;
-	 border-radius: 30px;
-	 border: 5px solid #999;
+	padding: 20px;
+	border-radius: 30px;
+	border: 5px solid #999;
+	margin-bottom:30px;
 	}
 
+	
 	/** Glyphicon custom font sizes **/
 	
 	.gIcon-2x {
