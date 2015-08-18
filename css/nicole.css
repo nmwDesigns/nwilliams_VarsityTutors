@@ -4,11 +4,37 @@
  */
 
 	html,
-	
 	body {
 	width: 100%;
 	height: 100%;
 	font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;}
+
+	::-moz-selection {
+	text-shadow: none;
+	color: #fff;
+	background: #222;
+	}
+	
+	::selection {
+	text-shadow: none;
+	color: #fff;
+	background: #222;
+	}
+	
+	img::selection {
+	color: #fff;
+	background: 0 0;
+	}
+	
+	img::-moz-selection {
+	color: #fff;
+	background: 0 0;
+	}
+	
+	body {
+	webkit-tap-highlight-color: #222;
+	}
+
 
 	a {
 	color: #666;
@@ -46,6 +72,10 @@
 	background-color: #222;
 	}
 	
+	.text-primary {
+    color: #333;
+	}
+	
 	.text-faded {
 	color: rgba(255,255,255,.7);
 	}
@@ -61,6 +91,10 @@
 	.no-padding {
 	padding: 0;
 	}
+	
+	/*!
+	* NAV
+	*/	
 	
 	.navbar-default {
 	border-color: rgba(34,34,34,.05);
@@ -227,4 +261,178 @@
 	
 	.section-heading {
 	margin-top: 0;
+	}
+	
+	
+	/*!
+	 * Buttons / CTA
+	 */	
+		
+	.btn-default {
+	border-color: #fff;
+	color: #222;
+	background-color: #fff;
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	transition: all .35s;
+	}
+	
+	.btn-default:hover,
+	.btn-default:focus,
+	.btn-default.focus,
+	.btn-default:active,
+	.btn-default.active,
+	.open > .dropdown-toggle.btn-default {
+	border-color: #9C3;
+	color: #fff;
+	background-color: #9C3;
+	}
+	
+	.btn-default:active,
+	.btn-default.active,
+	.open > .dropdown-toggle.btn-default {
+	background-image: none;
+	}
+	
+	.btn-default.disabled,
+	.btn-default[disabled],
+	fieldset[disabled] .btn-default,
+	.btn-default.disabled:hover,
+	.btn-default[disabled]:hover,
+	fieldset[disabled] .btn-default:hover,
+	.btn-default.disabled:focus,
+	.btn-default[disabled]:focus,
+	fieldset[disabled] .btn-default:focus,
+	.btn-default.disabled.focus,
+	.btn-default[disabled].focus,
+	fieldset[disabled] .btn-default.focus,
+	.btn-default.disabled:active,
+	.btn-default[disabled]:active,
+	fieldset[disabled] .btn-default:active,
+	.btn-default.disabled.active,
+	.btn-default[disabled].active,
+	fieldset[disabled] .btn-default.active {
+	border-color: #fff;
+	background-color: #fff;
+	}
+	
+	.btn-default .badge {
+	color: #fff;
+	background-color: #222;
+	}
+	
+	.btn-primary {
+	border-color: #333;
+	color: #fff;
+	background-color: #333;
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	transition: all .35s;
+	}
+	
+	.btn-primary:hover,
+	.btn-primary:focus,
+	.btn-primary.focus,
+	.btn-primary:active,
+	.btn-primary.active,
+	.open > .dropdown-toggle.btn-primary {
+	border-color: #9C3;
+	color: #fff;
+	background-color: #9C3;
+	}
+	
+	.btn-primary:active,
+	.btn-primary.active,
+	.open > .dropdown-toggle.btn-primary {
+	background-image: none;
+	}
+	
+	.btn-primary.disabled,
+	.btn-primary[disabled],
+	fieldset[disabled] .btn-primary,
+	.btn-primary.disabled:hover,
+	.btn-primary[disabled]:hover,
+	fieldset[disabled] .btn-primary:hover,
+	.btn-primary.disabled:focus,
+	.btn-primary[disabled]:focus,
+	fieldset[disabled] .btn-primary:focus,
+	.btn-primary.disabled.focus,
+	.btn-primary[disabled].focus,
+	fieldset[disabled] .btn-primary.focus,
+	.btn-primary.disabled:active,
+	.btn-primary[disabled]:active,
+	fieldset[disabled] .btn-primary:active,
+	.btn-primary.disabled.active,
+	.btn-primary[disabled].active,
+	fieldset[disabled] .btn-primary.active {
+	border-color: #f05f40;
+	background-color: #f05f40;
+	}
+	
+	.btn-primary .badge {
+	color: #f05f40;
+	background-color: #fff;
+	}
+	
+	.btn {
+	border: 0;
+	border-radius: 300px;
+	text-transform: uppercase;
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	font-weight: 700;
+	}
+	
+	.btn-xl {
+	padding: 15px 30px;
+	}
+	
+	/*!
+	 * SECTIONS
+	 */	
+	
+	#about { 
+	background: #888 url(../img/ice.png) 50% 0 fixed;
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 50px 0;
+	}
+	
+	#flavors { 
+	background: url(../img/home.jpg) 50% 0 fixed;
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 100px 0 150px;
+	}
+	
+	.flavors-box {
+	max-width: 180px;
+	text-align: left;
+	}
+	
+	@media(min-width:992px) {
+	.flavors-box {
+	}
+	}
+	
+	.flavors-box p {
+	margin-bottom: 0;
+	}
+	
+	/** Glyphicon custom font sizes **/
+	
+	.gIcon-2x {
+	font-size: 2em;
+	}
+	.gIcon-3x {
+	font-size: 3em;
+	}
+	.gIcon-4x {
+	font-size: 4em;
+	}
+	.gIcon-5x {
+	font-size: 5em;
 	}
