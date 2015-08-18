@@ -67,6 +67,14 @@
 	background-color: #444;
 	}
 	
+	.bg-secondary {
+	background-color: #FFF;
+	opacity: .75;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 0 0 60px; 0;
+	}
+	
 	.bg-dark {
 	color: #fff;
 	background-color: #222;
@@ -100,9 +108,7 @@
 	padding: 0 0 0 30px;	
 	}
 	
-	/*!
-	* NAV
-	*/	
+	/** NAV **/
 	
 	.navbar-default {
 	border-color: rgba(34,34,34,.05);
@@ -271,10 +277,11 @@
 	margin-top: 0;
 	}
 	
+	#chart{
+	width:100%;
+	}
 	
-	/*!
-	 * Buttons / CTA
-	 */	
+	/** Button / CTA **/
 		
 	.btn-default {
 	border-color: #fff;
@@ -394,9 +401,7 @@
 	padding: 15px 30px;
 	}
 	
-	/*!
-	 * SECTIONS
-	 */	
+	/** Sections **/
 	
 	#about { 
 	background: #888 url(../img/ice.png) 50% 0 fixed;
@@ -404,7 +409,7 @@
 	margin: 0 auto; 
 	width: 100%; 
 	position: relative; 
-	padding: 50px 0;
+	padding: 40px 0;
 	}
 	
 	#flavors { 
@@ -459,7 +464,6 @@
 	 border: 5px solid #999;
 	}
 
-		
 	/** Glyphicon custom font sizes **/
 	
 	.gIcon-2x {
@@ -474,3 +478,5 @@
 	.gIcon-5x {
 	font-size: 5em;
 	}
+	
+	
