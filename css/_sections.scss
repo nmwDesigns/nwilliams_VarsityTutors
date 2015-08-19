@@ -1,0 +1,74 @@
+	/** Sections **/
+	
+	#about { 
+	background: #888 url(../img/ice.png) 50% 0 fixed;
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 40px 0;
+	}
+	
+	#flavors { 
+	background: url(../img/home.jpg) 50% 0 fixed;
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 100px 0 150px;
+	}
+	
+	.flavors-box-left {
+	position: relative;
+	width: 180px;
+	left: 26%;
+	}
+	
+	.flavors-box-right{
+	position:relative;
+	width: 180px;
+	left: 40%;
+	}
+	
+	@media(max-width:600px) {
+	.flavors-box-left, .flavors-box-right {
+	width: 100%;
+	position:inherit;
+	}
+	}
+		
+	/*Contact*/
+	
+	#checkout { 
+	background: url(../img/contact.jpg) 50% 0 fixed;
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 100px 0 100px;
+	}
+	
+	/*orderForm*/
+	
+	#orderForm { 
+	background: #888 url(../img/wood.jpg) 50% 0 fixed;
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 50px 50px;
+	}
+	
+	
+	form {
+	background: #FFF;
+	padding: 20px;
+	border-radius: 30px;
+	border: 5px solid #999;
+	margin-bottom:30px;
+	padding-right:30px;
+	}
+
+	.padTop20{
+	padding-top: 20px;
+	}
